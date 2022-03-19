@@ -160,54 +160,135 @@
                     <button type="button" class="btn btn-success">Proceed</button>
 
                 </div>
+
                 <br><br>
-                <table class="placeorder" style="display: none;">
-                    <thead>
-                        <tr>
 
-                            <th>Size</th>
-                            <th>Toppings</th>
-                            <th>Crust</th>
-                            <th>Order No.</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="pizzselect"></td>
-                            <td id="toppselect"></td>
-                            <td id="crusttselect"></td>
-                            <td scope="row">1</td>
-                            <td id="total"></td>
+                <div>
 
-                        </tr>
+                    <h4>Your order is:</h4>
 
-                    </tbody>
+                    <div id="orders">
+
+                        <table class="placeorder" style="display: none;">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Size</th>
+
+                                    <th>Toppings</th>
+
+                                    <th>Crust</th>
+
+                                    <th>Order No.</th>
+
+                                    <th>Total</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td id="pizzselect"></td>
+
+                                    <td id="toppselect"></td>
+
+                                    <td id="crusttselect"></td>
+
+                                    <td scope="row">1</td>
+
+                                    <td id="total"></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <p id="totalpizza"></p>
+
+                        <p id="totalbill"></p>
+
+                        <p id="price">Delivery will cost ksh.200</p>
+
+                        <p id="message"></p>
+
+                        <br>
+
+                        <div class="final" style="display: none;">
+
+                            <div class="text-center">
+
+                                <button type="button" class="btn btn-success">Add Pizza</button>
+
+                            </div>
+
+                            <br>
+
+                            <div class="text-center">
+
+                                <button type="button1" class="btn btn-success">Checkout</button>
+
+                            </div>
 
 
-                </table>
-                <br>
-
-                <div class="final" style="display: none;">
-
-                    <div class="text-center">
-
-                        <button type="button" class="btn btn-success">Add Pizza</button>
+                        </div>
 
                     </div>
-
-                    <br>
-
-                    <div class="text-center">
-
-                        <button type="button1" class="btn btn-success">Checkout</button>
-
-                    </div>
-
 
                 </div>
 
-                <div>
+                <div class="location">
+
+                    <form>
+
+                        <div class="form-row">
+
+                            <div class="form-group col-md-4">
+
+                                <label for="Name">Name:</label>
+
+                                <input type="name" class="form-control" id="name" placeholder="name...">
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group col-md-4">
+
+                                <label for="number">Contact:</label>
+
+                                <input type="contact" class="form-control" id="contact" placeholder="0700000000">
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group col-md-4">
+
+                                <label for="inputLocation">location:</label>
+
+                                <input type="text" class="form-control" id="inputLocation"
+                                    placeholder="Buruburu, Nairobi">
+
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <button type="submit" class="btn btn-success">Place Order</button>
+
+                    </form>
+
+
+
+
+
 
                 </diV>
             </div>
