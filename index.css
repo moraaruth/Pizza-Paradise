@@ -1,0 +1,67 @@
+html {
+  background-color: azure;
+}
+
+#nav {
+  background-color: black;
+  padding: none;
+  font-size: 28px;
+  color: white;
+}
+.head {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.home {
+  background-image: url('pizza1.jpg');
+  height: 650px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+#p1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  padding-top: 5px%;
+}
+
+#p3 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+}
+#image1 {
+  width: 70%;
+  height: 70%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#pizselect {
+  font-size: 18px;
+  padding: 10px;
+}
+#image2 {
+  width: 75%;
+  height: 70%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#topselect {
+  font-size: 18px;
+  padding: 10px;
+}
+#crustselect {
+  font-size: 18px;
+  padding: 10px;
+}
+#image3 {
+  width: 75%;
+  height: 70%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
