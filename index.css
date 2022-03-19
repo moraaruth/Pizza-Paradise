@@ -15,7 +15,7 @@ html {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .home {
-  background-image: url('pizza1.jpg');
+  background-image: url('pizza2.jpg');
   height: 650px;
   width: 100%;
   background-position: center;
@@ -28,7 +28,7 @@ html {
 #p1 {
   font-family: 'Russo One', sans-serif;
   font-size: 45px;
-  padding-top: 5px%;
+  padding-top: 20%;
 }
 
 #p3 {
