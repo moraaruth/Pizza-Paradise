@@ -85,12 +85,11 @@ html {
   font-weight: bolder;
 }
 #table1 th td {
-}
-  
   border-collapse: collapse;
 }
-tr{
-  border-bottom: 1px solid black
+
+col tr {
+  border-bottom: 1px solid black;
 }
 #table1 {
   padding: 45px;

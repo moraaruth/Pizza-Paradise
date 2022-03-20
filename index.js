@@ -83,13 +83,17 @@ $("#add").click(function () {
 
         var newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
 
-        var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
+        var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $("#inlineFormCustomSelect1 option:selected").text()
+            + " - " + newPizza.size + '</td><td id="toppselect">' + $("#inlineFormCustomSelect2 option:selected").text() + " - " + newPizza.toppings + '</td><td id="crusttselect">' + $("#inlineFormCustomSelect3 option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
 
-        $("#Pizza").append(newRow);
-
+        $("newPizza").append(newRow)
     });
 
 });
+
+
+
+
 
 $("#checkout").click(function () {
 
