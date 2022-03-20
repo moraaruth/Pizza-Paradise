@@ -66,8 +66,19 @@ $("#checkout").click(function () {
     $("#price").hide();
     grandTotal = grandTotal + total;
 
-    $("#totalbill").html(grandTotal);
+    $("#totalbill").html(grandTotal + 250);
 });
+
+$("#placeorder").click(function () {
+    var location = $(".location input").val();
+
+    $(".location").html(location + " " + ("your order will be delivered to your location, Thankyou!"))
+
+
+});
+
+
+
 
 
 
