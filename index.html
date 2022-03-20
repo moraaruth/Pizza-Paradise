@@ -16,11 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand&family=Russo+One&family=Zilla+Slab+Highlight&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Pizza Paradise</title>
+
+
+
 </head>
 
 <body>
@@ -98,7 +104,7 @@
 
                     <form id="pizselect">
 
-                        <select class="custom-select mr-md-2" id="inlineFormCustomSelect">
+                        <select class="custom-select mr-md-2" id="inlineFormCustomSelect1">
 
                             <option selected>select size of pizza </option>
 
@@ -121,7 +127,7 @@
                     <form id="topselect">
 
 
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                        <select class="custom-select" id="inlineFormCustomSelect2">
 
                             <option selected>Select toppings </option>
 
@@ -157,7 +163,7 @@
                     <form id="crustselect">
 
 
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                        <select class="custom-select" id="inlineFormCustomSelect3">
 
                             <option selected>Select your crust </option>
 
@@ -176,7 +182,7 @@
 
                 <div class="text-center">
 
-                    <button type="button" class="btn btn-success">Proceed</button>
+                    <button type="submit" class="btn btn-success" id="buy">Proceed</button>
 
                 </div>
 
@@ -184,25 +190,25 @@
 
                 <div>
 
-                    <h4 style="display: none;">Your order is:</h4>
+                    <h4 style="display: none;" id="yourorder">Your order is:</h4>
 
                     <div id="orders">
 
-                        <table class="placeorder" style="display: none;">
+                        <table class="table1">
 
                             <thead>
 
                                 <tr>
 
-                                    <th>Size</th>
+                                    <th scope="col">Order No.</th>
 
-                                    <th>Toppings</th>
+                                    <th scope="col">Size</th>
 
-                                    <th>Crust</th>
+                                    <th scope="col">Toppings</th>
 
-                                    <th>Order No.</th>
+                                    <th scope="col">Crust</th>
 
-                                    <th>Total</th>
+                                    <th scope="col">Total</th>
 
                                 </tr>
 
@@ -212,13 +218,13 @@
 
                                 <tr>
 
+                                    <th scope="row">1</th>
+
                                     <td id="pizzselect"></td>
 
                                     <td id="toppselect"></td>
 
                                     <td id="crusttselect"></td>
-
-                                    <td scope="row">1</td>
 
                                     <td id="total"></td>
 
@@ -246,7 +252,7 @@
 
                             <div class="text-center">
 
-                                <button type="button" class="btn btn-success">Add Pizza</button>
+                                <button type="submit" class="btn btn-success" id="add">Add Pizza</button>
 
                             </div>
 
@@ -313,13 +319,19 @@
             </div>
 
             <div id="contact1">
+
                 <h4>Contact</h4>
+
                 <p>Pizza Paradise</p>
+
                 <p>Peponi road, Burburu Phase 3</p>
+
                 <p>Nairobi.</p>
 
                 <h5>Customer Care</h5>
+
                 <p>ruth.moraa@moringastudent.com</p>
+
             </div>
 
 
