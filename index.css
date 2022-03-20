@@ -84,3 +84,23 @@ html {
   color: rgb(94, 186, 243);
   font-weight: bolder;
 }
+.table1 th td {
+}
+  
+  border-collapse: collapse;
+}
+tr{
+  border-bottom: 1px solid black
+}
+.table1 {
+  padding: 45px;
+  width: 100%;
+}
+
+th,
+td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
