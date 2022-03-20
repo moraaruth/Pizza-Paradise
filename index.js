@@ -101,7 +101,11 @@ $("#checkout").click(function () {
 
     $("#checkout").hide();
 
-    $("#price").hide();
+    $("#price").show();
+
+    $("#totalbill").show();
+
+    $(".location").show();
 
     grandTotal = grandTotal + total;
 
