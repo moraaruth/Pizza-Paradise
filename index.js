@@ -60,6 +60,16 @@ $("#add").click(function () {
 
 });
 
+$("#checkout").click(function () {
+    $("#add").hide();
+    $("#checkout").hide();
+    $("#price").hide();
+    grandTotal = grandTotal + total;
+
+    $("#totalbill").html(grandTotal);
+});
+
+
 
 
 
