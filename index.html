@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand&family=Russo+One&family=Zilla+Slab+Highlight&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Pizza Paradise</title>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="nav">
+
+            <p class="head">Pizza Paradise</p>
+
+            <ul class="nav justify-content-center">
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#home">Home</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" target="_blank" href="#about">About Us</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#row1">Order</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#contact1">Contact Us</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="home">
+
+            <p id="p1">Welcome to Pizza Paradise</p><br><br><br><br>
+
+            <p id="p2">Best Pizza in town.</p>
+
+        </div>
+
+        <div class="container">
+
+            <div id="about">
+                <h3>About Us</h3>
+                <p>A Pizza Paradise is one of the most recognisable icons of Africa.
+                    Whichever way you slice it, Pizza Paradise is an industry leader in the quick service pizza game.
+                    The first Pizza Paradise outlet opened its doors in 1998 in Nairobi, Kenya, and rose quickly in
+                    popularity.
+                    Serving hot oven-fresh pizza with its signature all-natural tomato sauce and using only the freshest
+                    ingredients,
+                    Pizza Paradise has established itself at the top of the industry and is easily one of the first
+                    choices
+                    in quick service pizza in Africa.</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row" id="row1">
+
+                <div class="col-md-4 align-items-center">
+
+                    <img src="Pizza.jpg" alt="pizza" id="image1">
+
+                    <form id="pizselect">
+
+                        <select class="custom-select mr-md-2" id="inlineFormCustomSelect1">
+
+                            <option value="600">Small </option>
+
+                            <option value="850">Medium </option>
+
+                            <option value="1,200">Large </option>
+
+                        </select>
+
+                    </form>
+
+                </div>
+
+                <div class="col-md-4 align-items-center">
+
+                    <img src="topping.jpeg" alt="toppings" id="image2">
+
+                    <form id="topselect">
+
+
+                        <select class="custom-select" id="inlineFormCustomSelect2">
+
+                            <option value="100">Pepperoni</option>
+
+                            <option value="140">Mushrooms</option>
+
+                            <option value="200">Sausages</option>
+
+                            <option value="250">Bacon</option>
+
+
+                        </select>
+
+
+                    </form>
+
+                </div>
+
+                <div class="col-md-4 align-items-center">
+
+                    <img src="crust.jpeg" alt="crust" id="image3">
+
+                    <form id="crustselect">
+
+
+                        <select class="custom-select" id="inlineFormCustomSelect3">
+
+                            <option value="160">Stuffed </option>
+
+                            <option value="220">Gluten-free </option>
+
+                            <option value="200">Crispy </option>
+
+                        </select>
+
+
+                    </form>
+
+                </div>
+
+                <div class="text-center">
+
+                    <button type="submit" class="btn btn-success" id="buy">Proceed</button>
+
+                </div>
+
+                <br><br><br><br>
+
+                <div class="container" style="display: none;" id="yourorder">
+
+                    <h4>Your order is:</h4>
+
+                    <div class="container">
+
+                        <table class="table table-borderless">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th scope="col">Order No.</th>
+
+                                    <th scope="col">Size</th>
+
+                                    <th scope="col">Toppings</th>
+
+                                    <th scope="col">Crust</th>
+
+                                    <th scope="col">Total</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="pizza">
+
+                                <tr>
+
+                                    <th scope="row">1</th>
+
+                                    <td id="pizzselect"></td>
+
+                                    <td id="toppselect"></td>
+
+                                    <td id="crusttselect"></td>
+
+                                    <td id="total"></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <br><br><br>
+
+                        <div class="final">
+
+                            <div class="text-center">
+
+                                <button type="submit" class="btn btn-success" id="add">Add Pizza</button>
+
+                            </div>
+
+                            <br>
+
+                            <div class="text-center">
+
+                                <button type="button" class="btn btn-success" id="checkout">Checkout</button> <br><br>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="location" style="display: none;">
+
+                    <form>
+
+                        <div class="form-row">
+
+                            <div class="form-group col-md-4">
+
+                                <label for="Name">Name:</label>
+
+                                <input type="name" class="form-control" id="name" placeholder="name...">
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group col-md-4">
+
+                                <label for="number">Contact:</label>
+
+                                <input type="contact" class="form-control" id="contact" placeholder="0700000000">
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group col-md-4">
+
+                                <label for="inputLocation">location:</label>
+
+                                <input type="text" class="form-control" id="inputLocation"
+                                    placeholder="Buruburu, Nairobi">
+
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <div>
+
+                            <p id="price">Delivery will cost ksh.250</p> <br>
+
+                            <p id="totalbill">bill</p>
+
+
+                        </div>
+
+                        <br><br>
+
+                        <br>
+
+                        <button type="submit" class="btn btn-success" id="placeorder">Place Order</button>
+
+                    </form>
+
+                </diV>
+
+            </div><br><br>
+
+            <div id="contact1">
+
+                <h4>Contact</h4>
+
+                <p>Pizza Paradise</p>
+
+                <p>Peponi road, Burburu Phase 3</p>
+
+                <p>Nairobi.</p>
+
+                <h5>Customer Care</h5>
+
+                <p>ruth.moraa@moringastudent.com</p>
+
+            </div>
+
+
+
+
+
+
+
+            <script src="index.js"></script>
+</body>
+
+</html>
