@@ -84,7 +84,7 @@ html {
   color: rgb(94, 186, 243);
   font-weight: bolder;
 }
-.table1 th td {
+#table1 th td {
 }
   
   border-collapse: collapse;
@@ -92,7 +92,7 @@ html {
 tr{
   border-bottom: 1px solid black
 }
-.table1 {
+#table1 {
   padding: 45px;
   width: 100%;
 }

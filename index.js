@@ -70,6 +70,7 @@ $("#checkout").click(function () {
 });
 
 $("#placeorder").click(function () {
+
     var location = $(".location input").val();
 
     $(".location").html(location + " " + ("your order will be delivered to your location, Thankyou!"))
