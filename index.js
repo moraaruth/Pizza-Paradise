@@ -35,13 +35,15 @@ $(document).ready(function () {
 
         class paradise {
 
-            constructor(size, crust, toppings, total, orderNo) {
+            constructor(size, crust, toppings, addToppings, total, orderNo) {
 
                 this.size = size;
 
                 this.crust = crust;
 
                 this.toppings = toppings;
+
+                this.addToppings = addToppings
 
                 this.total = total;
 
@@ -58,17 +60,21 @@ $(document).ready(function () {
 
             var crustOfPizza = $("#inlineFormCustomSelect3 option:selected").val();
 
-            var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+            var addToppingsOfPizza = $("#topp1 input").val();
+
+            var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza) + parseInt(addToppingsOfPizza);
 
             order = order + 1;
 
             grandTotal = grandTotal + total;
 
 
-            var newParadise = new paradise(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
+            var newParadise = new paradise(sizeOfPizza, toppingsOfPizza, crustOfPizza, addToppingsOfPizza, total, order);
 
             var newRow = '<tr><th scope="row">' + newParadise.orderNo + '</th><td id="pizzselect">' + $("#inlineFormCustomSelect1 option:selected").text() +
-                " - " + newParadise.size + '</td><td id="toppselect">' + $("#inlineFormCustomSelect2 option:selected").text() + " - " + newParadise.toppings + '</td><td id="crusttselect">' + $("#inlineFormCustomSelect3 option:selected").text() + " - " + newParadise.crust + '</td><td id="total">' + newParadise.total + '</td></tr>'
+                " - " + newParadise.size + '</td><td id="toppselect">' + $("#inlineFormCustomSelect2 option:selected").text() + " - " + newParadise.toppings +
+                '</td><td id="crusttselect">' + $("#inlineFormCustomSelect3 option:selected").text() + " - " + newParadise.crust + '</td><td id="addToppselect">' + $("#topp1 input").text() + " - " + newParadise.addToppings +
+                '</td><td id="total">' + newParadise.total + '</td></tr>'
 
             $("#paradise").append(newRow)
         });
