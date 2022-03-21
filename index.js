@@ -10,7 +10,9 @@ $(document).ready(function () {
 
         var crustOfPizza = $("#inlineFormCustomSelect3 option:selected").val();
 
-        var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+        var addToppingsOfPizza = $("#topp1 input").val();
+
+        var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza) + parseInt(addToppingsOfPizza);
 
         var order = 1;
 
@@ -22,6 +24,8 @@ $(document).ready(function () {
         $("#toppselect").html($("#inlineFormCustomSelect2 option:selected").text() + "-" + toppingsOfPizza);
 
         $("#crusttselect").html($("#inlineFormCustomSelect3 option:selected").text() + "-" + crustOfPizza);
+
+        $("#addToppselect").html($("#topp1 input").text() + "-" + addToppingsOfPizza);
 
         $("#total").html(total);
 
