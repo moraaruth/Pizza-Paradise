@@ -83,8 +83,6 @@ $("#checkout").click(function () {
 
     $("#price").show();
 
-    $("#totalbill").show();
-
     $(".location").show();
 
     grandTotal = grandTotal + total;
@@ -97,6 +95,10 @@ $("#placeorder").click(function () {
     var location = $(".location input").val();
 
     $(".location").html(location + " " + ("your order will be delivered to your location, Thankyou!"))
+
+    $("#totalbill").show();
+
+
 
 
 });

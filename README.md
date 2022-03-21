@@ -121,7 +121,7 @@ Ruth Moraa
 ## Github Pages link
 
 You can view the live application by following this link
-[Pizza Paradise]()
+[Pizza Paradise](https://moraaruth.github.io/Pizza-Paradise/)
 
 ## Reference
 
