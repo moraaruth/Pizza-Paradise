@@ -92,6 +92,21 @@ $("#checkout").click(function () {
 
     $("#checkout").hide();
 
+    $("#delivery").show();
+
+    $("#price").hide();
+
+    $(".location").hide();
+
+    grandTotal = grandTotal + total;
+
+    $("#totalbill").html(grandTotal + 250);
+});
+
+$("div #deliver").click(function () {
+
+    $("#delivery").show();
+
     $("#price").show();
 
     $(".location").show();
@@ -99,6 +114,10 @@ $("#checkout").click(function () {
     grandTotal = grandTotal + total;
 
     $("#totalbill").html(grandTotal + 250);
+});
+
+$("div #pick").click(function () {
+    alert("your order will be ready in 30minutes, Thankyou!")
 });
 
 $("#placeorder").click(function () {
