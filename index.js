@@ -33,7 +33,7 @@ $(document).ready(function () {
 
             constructor(size, crust, toppings, total, orderNo) {
 
-                this.pizsize = size;
+                this.size = size;
 
                 this.crust = crust;
 
