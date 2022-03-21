@@ -30,10 +30,6 @@ $(document).ready(function () {
         $("#total").html(total);
 
 
-
-        $("#total").html(total);
-
-
         class paradise {
 
             constructor(size, crust, toppings, addToppings, total, orderNo) {
@@ -111,9 +107,7 @@ $("div #deliver").click(function () {
 
     $(".location").show();
 
-    grandTotal = grandTotal + total;
 
-    $("#totalbill").html(grandTotal + 250);
 });
 
 $("div #pick").click(function () {
@@ -127,6 +121,10 @@ $("#placeorder").click(function () {
     $(".location").html(location + " " + ("your order will be delivered to your location, Thankyou!"))
 
     $("#totalbill").show();
+
+    grandTotal = grandTotal + total;
+
+    $("#totalbill").html(grandTotal + 250);
 
 
 
